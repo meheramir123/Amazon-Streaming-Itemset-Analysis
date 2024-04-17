@@ -19,4 +19,4 @@ def sample_json(input_file, output_file, target_size_gb, filter_key='also_buy'):
     print(f"Finished sampling. Output size: {current_size_bytes/1024**3:.2f} GB")
     
 
-sample_json('All_Amazon_Meta.json','Sampled_Amazon_eta.json',15)
+sample_json('All_Amazon_Meta.json','Sampled_Amazon_Meta.json',15)
