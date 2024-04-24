@@ -13,8 +13,8 @@ consumer2 = Consumer(conf)
 consumer3 = Consumer(conf)
 
 # Subscribe consumers to the topic
-consumer1.subscribe(['preprocessed_data'])
-consumer2.subscribe(['preprocessed_data'])
+consumer1.subscribe(['dummy_data.json''])
+consumer2.subscribe(['dummy_data.json''])
 consumer3.subscribe(['dummy_data.json'])
 
 # Poll for messages
