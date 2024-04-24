@@ -3,7 +3,7 @@ This project aims to analyze a sampled dataset from Amazon using streaming data 
 This repository hosts a streaming frequent itemset mining implementation using Apache Kafka. The system comprises several components, including:
 **Frequent Itemset Mining with Apriori, PCY, and FP-Growth Algorithms**
 
-### 1. Introduction
+###  Introduction
 Frequent itemset mining is a crucial task in data mining and finds numerous applications, including market basket analysis, bioinformatics, and network traffic analysis. This document outlines the implementation of frequent itemset mining using Apriori, PCY, and FP-Growth algorithms. It also includes integration with MongoDB and preprocessing Amazon_meta.json file using Apache Kafka Producer and Consumer.
 
 
@@ -65,5 +65,5 @@ Integration with MongoDB allows for efficient storage and retrieval of frequent 
 
 Set up a bash script that runs the producer and consumers and initializes all Kafka components, like Kafka Connect, Zookeeper, etc.
 
-### 8. Conclusion
+### Conclusion
 This README file provides an overview of the frequent itemset mining project. It includes implementations of the Apriori, PCY, and FP-Growth algorithms, as well as integration with MongoDB. Additionally, it covers preprocessing of the Amazon_meta.json file using Apache Kafka Producer and Consumer. This project aims to efficiently mine frequent itemsets from large datasets for various applications.
