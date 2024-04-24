@@ -16,7 +16,6 @@ def process_json(data):
     df = df.drop(columns=columns_to_drop, errors='ignore')
 
     # Convert lists to strings if needed
-    df['feature'] = df['feature'].apply(lambda x: '; '.join(x) if isinstance(x, list) else x)
     df['also_buy'] = df['also_buy'].apply(lambda x: ', '.join(x) if isinstance(x, list) else x)
     df['also_viewed'] = df['also_viewed'].apply(lambda x: ', '.join(x) if isinstance(x, list) else x)
     df['categories'] = df['categories'].apply(lambda x: ' > '.join(sum(x, [])) if isinstance(x, list) else x)
