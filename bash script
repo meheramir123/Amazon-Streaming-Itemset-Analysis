@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Start Zookeeper
+zookeeper-server-start /path/to/zookeeper.properties &
+
+# Start Kafka Server
+kafka-server-start /path/to/server.properties &
+
+# Create Kafka topic
+kafka-topics --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic preprocessed_data &
+
+# Start Kafka Producer
+python3 kafka_producer.py &
+
+# Start Consumer 1
+python3 kafka_consumer_fp_growth.py &
+
+# Start Consumer 2
+python3 kafka_consumer_pcy.py &
+
+# Start Consumer 3
+python3 kafka_consumer_apriori.py &
+
+
+//to run 
+//chmod +x run_kafka.sh
+
